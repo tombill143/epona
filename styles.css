@@ -1,22 +1,93 @@
+/* Import the Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-*{
+* {
   box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'mozaic GEO Variable', sans-serif;
+  background-color: #8FCE9E;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #3B4A3F;
+  text-align: center;
+}
+
+.header-logo {
+  max-width: 100%;
+  width: 800px;
+}
+
+nav {
+  margin-top: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  display: flex;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav li.left-container {
+  margin-right: auto; /* Push to the left */
+}
+
+nav li.right-nav {
+  margin-left: auto; /* Push to the right */
+}
+
+nav a {
+  text-decoration: none;
+  color: #3B4A3F;
+  font-weight: bold;
+}
+
+
+nav ul li a:hover .hover-image {
+  content: url('./images/hover-home.svg');
+}
+
+nav ul li:nth-child(2) a:hover .hover-image {
+  content: url('./images/hover-shop.svg');
+}
+
+nav ul li:nth-child(3) a:hover .hover-image {
+  content: url('./images/hover-player.svg');
+}
+
+nav ul li a img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+nav ul li a:hover img {
+  opacity: 0.4;
+}
+
+.middle-nav-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'mozaic GEO Variable', sans-serif;
-    background-color: #8FCE9E;
-    overflow-x: hidden;
-    
-    
-  }
-
- 
 
   p{
     font-size: 24px;
