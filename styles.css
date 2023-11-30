@@ -123,6 +123,13 @@ nav ul li a:hover img {
  
 }
 
+.menu-text {
+  position: relative;
+  top: -12px; /* Adjust the value as needed */
+  font-size: 14px;
+  margin-left: 10px;
+}
+
 
 
 
