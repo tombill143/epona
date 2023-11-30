@@ -11,6 +11,10 @@ body, html {
   font-family: 'mozaic GEO Variable', sans-serif;
   background-color: #8FCE9E;
   overflow-x: hidden;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 2rem;
+  letter-spacing: 2.8px;
 }
 
 header {
@@ -49,6 +53,7 @@ nav li.left-container {
 
 nav li.right-nav {
   margin-left: auto; /* Push to the right */
+  
 }
 
 nav a {
@@ -58,21 +63,52 @@ nav a {
 }
 
 
-nav ul li a:hover .hover-image {
-  content: url('./images/hover-home.svg');
+.middle-nav-container li:hover .hover-image-home {
+  content: url('./images/hover-home.svg') !important;
+  
 }
 
-nav ul li:nth-child(2) a:hover .hover-image {
-  content: url('./images/hover-shop.svg');
+.middle-nav-container li:nth-child(2):hover .hover-image-shop {
+  content: url('./images/hover-shop.svg') !important;
 }
 
-nav ul li:nth-child(3) a:hover .hover-image {
-  content: url('./images/hover-player.svg');
+.middle-nav-container li:nth-child(3):hover .hover-image-player {
+  content: url('./images/hover-player.svg') !important;
 }
+
+.icon-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem 6rem 1rem 6rem;
+}
+
+.icon-container svg {
+  fill: white; /* Set the original color */
+  opacity: 1; /* Set the original opacity */
+  transition: fill 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add smooth transitions */
+  cursor: pointer;
+}
+
+.icon-container svg:hover {
+  fill: #8FCE9E; /* Change 'your_hover_color' to the desired color */
+  opacity: 1; /* Change to full opacity on hover */
+}
+
+
+svg{
+  color: #3B4A3F
+}
+
+
+
+
+
 
 nav ul li a img {
   opacity: 1;
   transition: opacity 0.3s;
+  margin-right: 16px;
 }
 
 nav ul li a:hover img {
@@ -80,10 +116,11 @@ nav ul li a:hover img {
 }
 
 .middle-nav-container {
-  flex-grow: 1;
+  flex-grow: 2;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 
 
@@ -1066,6 +1103,52 @@ input[type="checkbox"]:checked + label .mobile-text-overlay + p + .mobile-player
 
 
 
+
+/*******************BURGER MENU*****************************/
+
+
+nav svg{
+  width: 35px;
+}
+
+svg rect{
+  transition: all .2s;
+  transform-origin: 50% 50%;
+}
+.open rect:nth-child(2),
+.open rect:nth-child(3){
+  transition-delay: 0.2s
+}
+
+rect:nth-child(2),
+rect:nth-child(3){
+  transition-delay: 0;
+}
+
+.open rect:first-child {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.open rect:nth-child(2){
+  transform: rotate(45deg);
+ 
+}
+
+
+.open rect:nth-child(3){
+  transform: rotate(-45deg);
+ 
+}
+
+.open rect:last-child{
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+/*******************BURGER MENU END*****************************/
+
+
 /*--------------------------------------------------MOBILE VERSION-------------------------------------------------------------------------*/
 
 
@@ -1268,6 +1351,8 @@ input[type="checkbox"]:checked + label .mobile-text-overlay + p + .mobile-player
 
    
 }
+
+
 
 
 
