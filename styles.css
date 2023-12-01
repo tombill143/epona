@@ -28,7 +28,7 @@ header {
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 5px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -120,6 +120,8 @@ nav ul li a:hover img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 18.5rem;
+  margin-right: 20rem;
  
 }
 
@@ -131,7 +133,120 @@ nav ul li a:hover img {
 }
 
 
+.image-container {
+  width: 466px;
+  height: 448px;
+}
 
+
+.article-image{
+  width: 486px;
+  height: 316px;
+  object-fit: cover;
+}
+
+
+
+.image-container-narrower{
+  width: 100px;
+}
+
+.article-image-narrower{
+  width: 300px;
+}
+
+.image-container-narrower2{
+  width: 100px;
+  
+}
+
+.article-image-narrower2{
+  width: 300px;
+  margin-left: 6em;
+  
+}
+
+section.homepage-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 78px;
+  margin-top: 20px;
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepage-section > * {
+  margin: auto;
+}
+
+.homepage-section > * {
+  margin: auto;
+}
+
+#section2 {
+  display: flex;
+  flex-direction: start;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+#section3 {
+  display: flex;
+  flex-direction: start;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+#section2 > * {
+  margin: auto;
+}
+
+.image-container2 {
+  width: 360px; 
+  height: 360px;
+}
+
+.article-image2 {
+  width: 336px;
+  height: 215px;
+  object-fit: cover;
+}
+
+.banner-image
+{
+  width: 600px;
+  height: 102px;
+  object-fit: cover;
+}
+
+.banner-container
+{
+  width: 360px; 
+  height: 360px;
+}
+
+
+
+.post-description{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+ /***************************************** PLAYER PAGE **************************************************************************************/
 
   p{
     font-size: 24px;
@@ -147,7 +262,6 @@ nav ul li a:hover img {
    
   }
   
-  
   .hero-text {
     display: flex;
     align-items: flex-end;
@@ -156,17 +270,10 @@ nav ul li a:hover img {
     gap: 55px;
   }
   
-  /* img.logo{
-   text-align: center;
-  } */
-  
   .hero-text button:hover {
     background-color: #555;
     color: white;
   }
-
-
-
 
   .centered-text {
    
@@ -188,8 +295,6 @@ nav ul li a:hover img {
   background-color: #2C2929;
 }
 
-
-
 .logo-text {
   font-family: "mozaic-geo-variable", sans-serif;
   font-variation-settings: 'wght' 400;
@@ -201,9 +306,6 @@ nav ul li a:hover img {
   line-height: 1.2; /* Adjust the line-height as needed */
   margin-right: -4rem; /*This solved the problem of having 3 ptag lines appearing*/
 }
-
-
-
 
 .sponsors{
   display: flex;
@@ -228,19 +330,13 @@ nav ul li a:hover img {
   max-width: 100%;
 }
 
-
-
-
 .left-column {
   flex: 50%; 
 }
 
-
 .right-column {
   flex: 50%;
 }
-
-
 
 .footer {
     background-color: #464141;  
@@ -285,8 +381,6 @@ nav ul li a:hover img {
 .footer-links a:hover {
   color: #8FCE9E; 
 }
-
-
 
 .footer-text{
   color: #8FCE9E;
@@ -347,8 +441,6 @@ p.our-sponsored-players{
   
 }
 
-
-
 .newsbox {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -404,13 +496,11 @@ p.our-sponsored-players{
   
 }
 
-
 .sponsors img {
   display: block;
   animation: scrollImage 10s linear infinite; 
   white-space: nowrap;
 }
-
 
 .read-article{
  margin-bottom: auto;
@@ -476,7 +566,6 @@ p.our-sponsored-players{
     color: white;
   }
 
-
   .centered-text {
     margin-left: 16em;
     margin-right: 16em;
@@ -538,12 +627,16 @@ red
   margin-top: 10px;
 }
 
-
 .news p {
   font-size: 18px;
   margin-bottom: 5px;
   margin-top: 0;
 }
+
+
+
+
+
 
 .sponsors {
   display: flex;
@@ -566,9 +659,6 @@ red
   margin-bottom: 20px; /*Now corresponding with the*/
 }
 
-
-
-
 .sponsor-list-container {
   display: flex; 
   animation: scrollImages 50s linear infinite;
@@ -582,7 +672,6 @@ red
   
 }
 
-
 .facebook-svg {
   transition: fill 0.3s ease-in-out;
   padding-left: 4px;
@@ -592,8 +681,6 @@ red
   transition: fill 0.3s ease-in-out;
   padding-left: 4px;
 }
-
-
 
 .svg-wrapper {
   top: 0;
@@ -607,7 +694,6 @@ red
 .player-wrapper:hover .svg-wrapper {
   right: 0;
 }
-
 
 .facebook-svg:hover {
   fill: #8FCE9E; 
@@ -625,13 +711,6 @@ red
   
 }
 
-section{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0px 16px 60px 16px;
-  margin-top: 136px;
-}
 
 .news-container{
   background-color: #8FCE9E;
@@ -649,10 +728,6 @@ section{
     transform: translateX(-100%); 
   }
 }
-
-
-
-
 
 .sponsors img {
   display: block;
@@ -689,7 +764,6 @@ p .read-article{
   background-color: white;
   
 }
-
 
 
 .custom-icon {
