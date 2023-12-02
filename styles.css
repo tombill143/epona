@@ -156,6 +156,20 @@ nav ul li a:hover img {
   object-fit: cover;
 }
 
+.image-container:hover .article-image {
+  opacity: 0.7;
+  
+}
+
+
+
+.image-container2:hover .article-image2 {
+  opacity: 0.7;
+}
+
+
+
+
 
 
 .image-container-narrower{
@@ -182,7 +196,7 @@ section.homepage-section {
   justify-content: center;
   align-items: center;
   gap: 78px;
-  margin-top: 20px;
+  margin-top: 6rem;
   width: 1200px;
   max-width: 100%;
   margin-left: auto;
