@@ -17,6 +17,12 @@ body, html {
   letter-spacing: 2.8px;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+
+}
+
 header {
   background-color: #3B4A3F;
   text-align: center;
@@ -78,9 +84,14 @@ nav a {
 
 .icon-container {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 2rem 6rem 1rem 6rem;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  width: 1378px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
 }
 
 .icon-container svg {
@@ -120,8 +131,8 @@ nav ul li a:hover img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 18.5rem;
-  margin-right: 20rem;
+  margin-left: 19.5rem;
+  margin-right: 23rem;
  
 }
 
@@ -152,7 +163,7 @@ nav ul li a:hover img {
 }
 
 .article-image-narrower{
-  width: 300px;
+  width: 307px;
 }
 
 .image-container-narrower2{
@@ -161,8 +172,8 @@ nav ul li a:hover img {
 }
 
 .article-image-narrower2{
-  width: 300px;
-  margin-left: 6em;
+  width: 307px;
+  margin-left: 4em;
   
 }
 
@@ -299,7 +310,7 @@ footer{
 .footer-contacts,
 .copyright, 
 .footer-contacts > a{
-  font-size: 24px;
+  font-size: 18px;
   margin: 10px 0; 
   width: 1400px;
   justify-content: center;
